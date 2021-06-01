@@ -1,0 +1,153 @@
+/*====================
+comfortable section
+====================*/
+.comfortableSec {
+  padding: 25% 12% 0 0;
+
+  // liquid
+  @include u-mqMax($maxW: 1100px) {
+    padding-right: 5%;
+  }
+
+
+  // SP
+  @include u-mqMax{
+    padding-top: 70%;
+    padding-right: 0;
+  }
+
+  &__topArea {
+    display: flex;
+    align-items: center;
+
+    @include u-mqMax{
+      display: block;
+    }
+  }
+
+  &__topAreaTopFlex {
+    width: 60%;
+    overflow: visible;
+
+    @include u-mqMax{
+      width: 100%;
+    }
+  }
+
+  &__topAreaImg {
+    position: relative;
+    height: auto;
+  }
+
+  &__topAreaTextCont {
+    width: 32vw;
+    position: absolute;
+    top: -100px;
+    right: -400px;
+    z-index: 1;
+
+    // liquid
+    @include u-mqMax($maxW: 1100px) {
+      right: -300px;
+    }
+
+    @include u-mqMax {
+        right: 0;
+        top: auto;
+        bottom: -30px;
+        max-width: 298px;
+        min-width: 298px;
+    }
+  }
+
+  &__svImgCont {
+    width: 92%;
+    padding-right: 20px;
+    margin-left: -40px;
+
+    // SP
+    @include u-mqMax {
+      width: calc(100% + 5%);
+      margin-left: -10%;
+      padding-right: 0;
+    }
+  }
+
+  &__topAreaBottomFlex {
+    width: 40%;
+    @include u-mqMax{
+        width: 100%;
+    }
+  }
+
+  &__topAreaBottomInner {
+    padding: 17% 0 17% 20%;
+
+    // liquid
+    @include u-mqMax($maxW: 1100px) {
+      padding-left: 10%;
+    }
+
+    @include u-mqMax {
+        padding: 17% 20px 0;
+    }
+  }
+
+  &__topAreaBottomCatch {
+    width: 35vw;
+    max-width: 382px;
+    display: inline-block;
+
+    @include u-mqMax {
+      width: 90%;
+    }
+  }
+
+  &__topAreaBottomTextCont {
+    font-size: 1.8rem;
+    font-family: "Hiragino Kaku Gothic", sans-serif;
+    line-height: 1.9;
+    letter-spacing: 0.2em;
+    color: $blue01;
+    padding-top: 36px;
+    display: inline-block;
+
+    @include u-mqMax {
+        font-size: 1.4rem;
+    }
+  }
+
+  // bottom area
+  &__bottomArea {
+    padding: 80px 0 69px 14%;
+
+    // liquid
+    @include u-mqMax($maxW: 1100px) {
+      padding-left: 5%;
+      padding-bottom: 40%;
+    }
+
+    // SP
+    @include u-mqMax {
+      padding: 15% 0 40% 5%;
+    }
+  }
+
+  &__bottomList {
+    justify-content: center;
+  }
+
+  &__productImgCont {
+    // width: 356px;
+  }
+
+  &__productDescText {
+    font-size: 1.4rem;
+    line-height: 2;
+
+    // SP
+    @include u-mqMax {
+      font-size: 1.2rem;
+    }
+  }
+}

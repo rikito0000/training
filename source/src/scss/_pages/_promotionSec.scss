@@ -1,0 +1,75 @@
+/*===================
+promotion section
+===================*/
+.promotionSec {
+
+  &__topArea {
+    align-items: center;
+
+    // SP
+    @include u-mqMax {
+      display: block;
+    }
+  }
+
+  &__leftAreaCont {
+    position: relative;
+    z-index: 2;
+    width: 60%;
+
+    // liquid
+    @include u-mqMax($maxW: 1100px) {
+      width: 55%;
+    }
+
+    // SP
+    @include u-mqMax {
+      width: 100%;
+      padding-right: 5%;
+    }
+  }
+
+  &__rightBtnCont {
+    width: 40%;
+    position: relative;
+    z-index: 1;
+
+    // liquid
+    @include u-mqMax($maxW: 1100px) {
+      width: 45%;
+    }
+
+    // SP
+    @include u-mqMax {
+      width: 95%;
+      margin-top: -30%;
+      margin-left: 5%;
+    }
+  }
+
+  &__rightBtnInr {
+    padding: 14%;
+    background-color: #F5F5F5;
+
+    // SP
+    @include u-mqMax {
+      padding: 45% 5% 10%;
+    }
+  }
+
+  &__rightBtnContLink {
+    width: 240px;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+
+    @include u-trsPC;
+    @include u-hoverOp;
+
+    // SP
+    @include u-mqMax {
+      margin: 0 auto;
+    }
+  }
+}

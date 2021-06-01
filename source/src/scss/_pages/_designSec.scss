@@ -1,0 +1,106 @@
+/*===================
+design section
+===================*/
+.designSec {
+  padding-right: 5%;
+
+  // SP
+  @include u-mqMax {
+    padding-top: 40%;
+    padding-right: 0;
+  }
+
+  &__inner {
+    padding: 7% 45% 2% 12%;
+    position: relative;
+
+    // liquid
+    @include u-mqMax($maxW: 1100px) {
+      padding-left: 5%;
+    }
+
+    // SP
+    @include u-mqMax {
+      padding: 70% 5% 10%;
+    }
+  }
+
+  &__topAreaTextImg {
+    max-width: 380px;
+    margin: 0 auto 40px;
+
+    // SP
+    @include u-mqMax {
+      width: 95vw;
+      margin: 0;
+      position: absolute;
+      top: -13%;
+      left: 50%;
+      transform: translate(-50%, -100%);
+      z-index: 2;
+    }
+  }
+
+  &__topAreaImg {
+    width: 55%;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    right: -10%;
+    transform: translateY(-50%);
+    z-index: 1;
+
+    // SP
+    @include u-mqMax {
+      width: 100vw;
+      top: 0;
+      right: -13%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__designAreaImgCont {
+    width: 52px;
+    margin: 0 auto;
+  }
+
+  &__designAreaBox {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__designAreaBoxItem {
+    width: 50%;
+    padding-right: 16px;
+    text-align: center;
+    margin-bottom: 40px;
+
+    // SP
+    @include u-mqMax {
+      width: 100%;
+      margin-bottom: 15%;
+      padding-right: 0;
+    }
+  }
+
+  &__designTitle {
+    padding: 15px 0 5px;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: $blue02;
+    font-weight: bold;
+  }
+
+  &__designText {
+    padding: 5px 0;
+    color: $blue02;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    text-align: left;
+
+    // SP
+    @include u-mqMax {
+      text-align: center;
+    }
+  }
+}

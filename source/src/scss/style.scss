@@ -1,0 +1,27 @@
+@import '_base/variable'; // set variable
+@import '_base/font'; // @font-face
+@import '_base/reset'; // reset browser css
+@import '_base/keyframe'; // Maximize mixin for custom animation
+
+@import '_mixin/fontFeature'; // miner property
+@import '_mixin/fontSmoothing'; // miner property
+@import '_mixin/u-mediaquery'; // media query
+@import '_mixin/u-transition'; // transition
+@import '_mixin/u-browserHack'; // browser hack(IE・Edge)
+@import '_mixin/u-hover'; // hover action
+@import '_mixin/u-imgText'; // text for image
+
+@import '_modules/siteFooter'; // FOOTER
+@import '_modules/fixedBnr'; // fixedBnr
+
+@import 'common'; // common style (<body>, PC・SP toggle)
+
+@import '_pages/activitySec';
+@import '_pages/colorSec';
+@import '_pages/comfortableSec';
+@import '_pages/descriptionSec';
+@import '_pages/designSec';
+@import '_pages/flexibleSec';
+@import '_pages/fvSec';
+@import '_pages/productSec';
+@import '_pages/promotionSec';

@@ -1,0 +1,114 @@
+/*===================
+first visual
+===================*/
+.fvSec {
+  width: 100vw;
+  padding-top: 56%;
+  position: relative;
+
+  // SP
+  @include u-mqMax {
+    padding-top: 178%;
+  }
+
+  &__topArea {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__topAreaContImg {
+    height: 100%;
+    transform: scale(1.1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &.slide01 {
+      background-image: url("../images/fvSec/fv01_pc.jpg");
+
+      // SP
+      @include u-mqMax {
+        background-image: url("../images/fvSec/fv01_sp.jpg");
+      }
+    }
+    &.slide02 {
+      background-image: url("../images/fvSec/fv02_pc.jpg");
+
+      // SP
+      @include u-mqMax {
+        background-image: url("../images/fvSec/fv02_sp.jpg");
+      }
+    }
+    &.slide03 {
+      background-image: url("../images/fvSec/fv03_pc.jpg");
+
+      // SP
+      @include u-mqMax {
+        background-image: url("../images/fvSec/fv03_sp.jpg");
+      }
+    }
+    &.slide04 {
+      background-image: url("../images/fvSec/fv04_pc.jpg");
+
+      // SP
+      @include u-mqMax {
+        background-image: url("../images/fvSec/fv04_sp.jpg");
+      }
+    }
+    &.slide05 {
+      background-image: url("../images/fvSec/fv05_pc.jpg");
+
+      // SP
+      @include u-mqMax {
+        background-image: url("../images/fvSec/fv05_sp.jpg");
+      }
+    }
+  }
+
+  &__topAreaCont {
+    &.swiper-slide-active {
+      .fvSec__topAreaContImg {
+        transform: scale(1.1);
+        animation: zoomIn 5s 0s ease-in-out forwards;
+      }
+    }
+  }
+
+  &__topAreaContMessage {
+    width: 60vw;
+    position: absolute;
+    top: 0;
+    left: -5%;
+
+    // SP
+    @include u-mqMax {
+      width: 75vw;
+      padding-top: 8%;
+    }
+
+    &.bottomLeft {
+      top: auto;
+      bottom: 0;
+
+      // SP
+      @include u-mqMax {
+        bottom: auto;
+        top: 60%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+
+  &__topAreaBottomTextCont {
+    background-color: #4376b2;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 50px 80px 20px;
+  }
+}

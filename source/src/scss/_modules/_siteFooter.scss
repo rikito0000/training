@@ -1,0 +1,65 @@
+/*====================================================================
+siteFooter
+====================================================================*/
+.siteFooter {
+  background-color: $white;
+  text-align: center;
+  padding-bottom: 130px;
+
+  // SP
+  @include u-mqMax {
+    padding-bottom: 20vw;
+  }
+
+  &__container {
+    padding-left: 12%;
+    padding-right: 12%;
+
+    // SP
+    @include u-mqMax {
+      width: 100%;
+      padding: 0 20px;
+    }
+  }
+
+  &__title {
+    border-bottom: solid 1px #5086C4;
+    padding: 40px 0;
+  }
+
+  &__titleLogoCont {
+    width: 150px;
+    margin: 0 auto;
+  }
+
+  &__bottomTitle {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #5086C4;
+    margin-top: 36px;
+    margin-bottom: 24px;
+  }
+
+  &__bottomItemLink {
+    display: inline-block;
+    @include u-trsPC;
+    @include u-hoverOp;
+  }
+
+  &__bottomItemText {
+    font-size: 1.4rem;
+    color: #5086C4;
+    margin-bottom: 16px;
+  }
+
+  &__bottomAreaItem {
+    list-style-type: disc;
+    list-style: disc;
+  }
+}
+
+.copyrights {
+  font-size: 1.2rem;
+  color: #5086C4;
+  padding: 24px 0 19px 0;
+}

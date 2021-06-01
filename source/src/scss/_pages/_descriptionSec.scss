@@ -1,0 +1,245 @@
+/*===================
+description section
+===================*/
+.descriptionSec {
+  padding-bottom: 10vw; // 画像がはみ出る分のpadding
+  position: relative;
+
+  // SP
+  @include u-mqMax {
+    padding-bottom: 45vw;
+  }
+
+  &__topInner {
+    padding-left: 25%;
+    margin-top: -150px;
+    position: relative;
+    z-index: 2;
+
+    // liquid
+    @include u-mqMax($maxW: 1100px) {
+      padding-left: 10%;
+    }
+
+    // SP
+    @include u-mqMax {
+      margin-top: -122px;
+      padding-left: 5%;
+    }
+  }
+
+  &__topArea {
+    background-color: rgba(255, 255, 255, 0.85);
+  }
+
+  &__topAreaTopCont {
+    padding: 35px 80px 20px 20px;
+    display: flex;
+    justify-content: flex-end;
+
+    // SP
+    @include u-mqMax {
+      padding: 20px 60px 20px;
+      justify-content: center;
+    }
+  }
+
+  &__topAreaTopContFigure {
+    max-width: 603px;
+    height: auto;
+  }
+
+  &__topAreaTextImgCont {
+    width: 45%;
+    max-width: 389px;
+    position: absolute;
+    top: 15%;
+    right: 20%;
+    z-index: 1;
+
+    // liquid
+    @include u-mqMax($maxW: 1100px) {
+      top: 2%;
+    }
+
+    // SP
+    @include u-mqMax {
+      width: 80%;
+      margin-top: -10%;
+      position: relative;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  &__topAreaText {
+    line-height: 2.1;
+    letter-spacing: 0.2em;
+    color: #5086C4;
+  }
+
+  &__topAreaBottomCont {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+
+    // SP
+    @include u-mqMax {
+      padding-top: 15%;
+      display: block;
+    }
+  }
+
+  &__topAreaBottomContFlex {
+    width: 65%;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    transform: translateX(-50%);
+
+    // liquid
+    @include u-mqMax($maxW: 1100px) {
+      width: 45%;
+      transform: translateX(-30%);
+    }
+
+    // SP
+    @include u-mqMax {
+      width: 100%;
+      margin-left: -10%;
+      position: relative;
+      top: 0;
+      transform: none;
+      z-index: 2;
+    }
+  }
+
+  &__topAreaBottomDesc {
+    padding: 15% 18% 13% 40%;
+    position: relative;
+    z-index: 1;
+
+    // liquid
+    @include u-mqMax($maxW: 1100px) {
+      padding-left: 35%;
+      padding-right: 10%;
+    }
+
+    // SP
+    @include u-mqMax {
+      margin-top: 10%;
+      padding: 0 5% 20% 5%;
+    }
+  }
+
+  &__topAreaCatchText {
+    max-width: 407px;
+
+    // SP
+    @include u-mqMax {
+
+    }
+  }
+
+  &__topAreaTextCont {
+    margin-top: 30px;
+    color: $white;
+    font-weight: 400;
+    font-size: 1.8rem;
+    // font-style: oblique;
+    font-family: "Hiragino Kaku Gothic", sans-serif;
+
+    // SP
+    @include u-mqMax {
+      font-size: 1.4rem;
+    }
+  }
+
+
+  // bottomArea
+  &__bottomInner {
+    margin-top: -20%;
+    z-index: 1;
+  }
+
+  &__bottomAreaCont {
+    width: 50%;
+    padding: 13% 10% 4% 10%;
+    position: relative;
+    background-color: #F5F5F5;
+
+    // SP
+    @include u-mqMax {
+      width: 100%;
+      padding: 28% 10% 28% 10%;
+    }
+  }
+
+  &__bottomAreaContText {
+    display: block;
+    font-size: 1.9rem;
+    font-weight: 600;
+    line-height: 1.6;
+    color: $blue01;
+  }
+
+  &__bottomProduct {
+    width: 221px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  &__bottomAreaContPrice {
+    margin-top: 15px;
+    font-size: 3.5rem;
+    color: $blue01;
+  }
+
+  &__price {
+    font-size: 1.4rem;
+    font-weight: 400px;
+  }
+
+  &__bottomBtnContLink {
+    width: 240px;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+
+    @include u-trsPC;
+    @include u-hoverOp;
+
+    // SP
+    @include u-mqMax {
+      margin: 0 auto;
+    }
+  }
+
+  &__bottomAreaBottom {
+    width: 45vw;
+    position: absolute;
+    top: calc(10vw + 100px);
+    right: 70px;
+    transform: translateX(100%);
+
+    // liquid
+    @include u-mqMax($maxW: 1100px) {
+      width: 50vw;
+      top: calc(10vw + 150px);
+      right: 30px;
+    }
+
+    // SP
+    @include u-mqMax {
+      width: 80%;
+      min-width: 335px;
+      max-width: 460px;
+      transform: translateX(0%);
+      top: auto;
+      right: auto;
+      left: 0;
+      bottom: -35%;
+    }
+  }
+}

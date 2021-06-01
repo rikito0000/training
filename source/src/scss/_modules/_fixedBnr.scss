@@ -1,0 +1,110 @@
+.fixedBnr {
+  width: 100%;
+  padding: 10px 30px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 -1px 10px 3px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  opacity: 0;
+  @include u-trs;
+
+  // SP
+  @include u-mqMax {
+    padding: 8px 15px;
+  }
+
+  &.is_fixed {
+    opacity: 1;
+  }
+
+  &__cont {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    // 500px~
+    @include u-mqMin($minW: 500px) {
+      justify-content: space-between;
+    }
+  }
+
+  &__product,
+  &__price,
+  &__tax {
+    font-family: noto-sans-cjk-jp, sans-serif;
+    color: #0d69b9;
+    font-weight: bold;
+  }
+
+  &__product {
+    font-size: 24px;
+
+    // SP
+    @include u-mqMax {
+      font-size: 12px;
+    }
+  }
+
+  &__price {
+    font-size: 32px;
+
+    // SP
+    @include u-mqMax {
+      font-size: 16px;
+    }
+  }
+
+  &__tax {
+    font-size: 16px;
+
+    // SP
+    @include u-mqMax {
+      font-size: 8px;
+    }
+  }
+
+  &__rightBtn {
+    width: 220px;
+    color: #fff;
+    background: #2d6697;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+
+    @include u-trsPC;
+    @include u-hoverOp;
+
+
+    // SP
+    @include u-mqMax {
+      width: 162px;
+    }
+  }
+
+  &__rightText {
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+
+
+    // SP
+    @include u-mqMax {
+    font-size: 17px;
+    font-weight: bold;
+    }
+  }
+
+  &__br {
+    // 500px~
+    @include u-mqMin($minW: 500px) {
+      display: none;
+    }
+  }
+}

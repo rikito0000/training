@@ -1,0 +1,45 @@
+//- META INFORMATION
+- const page_title = '【公式】Nino（ニーノ）ハイブリッドネックファン | マイナスイオンの風で、涼しく、美しく。'
+- const relativePath = '.'
+- const meta_title = page_title
+- const meta_keywords = 'Nino,にーの,ニーノ,ハイブリッドネックファン,首掛け扇風機,ネックファン,Kirala'
+- const meta_description = 'Ninoで風を着こなそう。⾸回りをひんやりと快適に保つ、全く新しい価値を持ったハイブリッドネックファン「Nino」、Kirala Airから登場。パワフルでありながら、音や振動が気にならない静音設計で、自分だけの涼風をまとう感覚をあなたへ。'
+- const meta_og_url = 'https://website.com'
+
+doctype html
+html(lang="ja")
+    head
+        //- HEAD
+        include ./_inc/_head.pug
+
+
+    body.topPage
+        |
+        .
+            <noscript>
+                <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PCKJ3TX"height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+        //- MAIN CONTENT
+        main.siteContent(role="main")
+
+            section.fvSec
+                .fvSec__inr.swiper-container
+                    .fvSec__inrBox.swiper-wrapper
+                        .fvSec__inrBoxCont.swiper-slide
+                            .fvSec__inrBoxContImg
+                            p.fvSec__inrBoxContTextImg
+                                img.fvSec__inrBoxContTextImg.u-pcDb(src=`${relativePath/_assets/images/fvSec/fvText_pc.png}` alt="wearing breeze")
+                                img.fvSec__inrBoxContTextImg.u-spDb(src=`${relativePath/_assets/images/fvSec/fvText_sp.png}` alt="wearing breeze")
+
+
+            section.productSec
+            section.comfortableSec
+            section.activitySec
+            section.promotionSec
+            section.flexibleSec
+            section.colorSec
+            section.detailsSec
+
+
+        //- FOOTER
+        include ./_inc/_siteFooter.pug

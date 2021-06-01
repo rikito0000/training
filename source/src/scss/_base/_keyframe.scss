@@ -1,0 +1,27 @@
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.fadeInUp {
+  opacity: 0;
+  transform: translateY(20px);
+  animation-name: fadeInUp;
+  animation-fill-mode: forwards;
+  animation-timing-function: $effectSoft;
+}
+
+
+@keyframes zoomIn {
+  0% {
+    transform: none;
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}

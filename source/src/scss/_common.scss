@@ -1,0 +1,332 @@
+/*====================================================================
+COMMON LAYOUT
+====================================================================*/
+html {
+  font-size: 62.5%; // 1rem = 10px
+
+  // SP
+  @include u-mqMax {
+    font-size: calc(10vw / 3.75);
+  }
+}
+body {
+  @include fontFeature;
+}
+
+html {
+  overflow: auto;
+}
+
+body {
+  overflow: hidden;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+figure,
+p {
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+  list-style-type: none;
+}
+
+/*-----------------------------------------------
+PC/SP
+------------------------------------------------*/
+// PC
+.u-pcDb {
+  display: block;
+}
+.u-pcDib {
+  display: inline-block;
+}
+.u-pcDin {
+  display: inline;
+}
+.u-pcDf {
+  display: flex;
+}
+.u-pcDt {
+  display: table;
+}
+.u-pcDtc {
+  display: table-cell;
+}
+
+.u-spDb,
+.u-spDib,
+.u-spDin,
+.u-spDf,
+.u-spDt,
+.u-spDtc {
+  display: none;
+}
+
+// SP
+@include u-mqMax {
+  .u-pcDb,
+  .u-pcDib,
+  .u-pcDin,
+  .u-pcDf,
+  .u-pcDt,
+  .u-pcDtc {
+    display: none;
+  }
+
+  .u-spDb {
+    display: block;
+  }
+  .u-spDib {
+    display: inline-block;
+  }
+  .u-spDin {
+    display: inline;
+  }
+  .u-spDf {
+    display: flex;
+  }
+  .u-spDt {
+    display: table;
+  }
+  .u-spDtc {
+    display: table-cell;
+  }
+}
+
+/*-----------------------------------------------
+main
+------------------------------------------------*/
+.siteContent {
+  min-height: 100vh;
+}
+
+/*====================
+共通section
+====================*/
+.multiProductNam {
+  position: relative;
+
+  // SP
+  @include u-mqMax {
+    padding-left: 5%;
+    margin-right: -5%;
+  }
+}
+
+.multiProductList {
+  &:nth-child(2n) {
+    .multiProductNam {
+      // SP
+      @include u-mqMax {
+        padding-left: 0;
+        margin-right: 0;
+        padding-right: 10%;
+        margin-left: -5%;
+      }
+    }
+  }
+}
+
+.multiProductList {
+  width: calc(100% / 3);
+
+  @include u-IEhack {
+    width: calc((100% - 0.1px) / 3);
+  }
+
+  // SP
+  @include u-mqMax {
+    width: 100%;
+  }
+
+  &:nth-of-type(2) {
+    padding-top: 60px;
+    padding-left: 40px;
+
+    // SP
+    @include u-mqMax {
+      padding-top: 18%;
+      padding-left: 0;
+    }
+  }
+
+  &:nth-of-type(3) {
+    padding-top: 120px;
+    padding-left: 40px;
+
+    // SP
+    @include u-mqMax {
+      padding-top: 18%;
+      padding-left: 0;
+    }
+  }
+}
+
+.multiProductDesc {
+  padding-top: 80px;
+  font-family: "Hiragino Kaku Gothic", sans-serif;
+
+  // SP
+  @include u-mqMax {
+    padding-top: 15%;
+  }
+}
+
+.multiProductCatch {
+  margin-bottom: 15px;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.4;
+
+  // SP
+  @include u-mqMax {
+    font-size: 1.9rem;
+  }
+}
+
+.multiProductIcon {
+  height: 37%;
+  max-height: 100px;
+  position: absolute;
+  bottom: 11%;
+  left: -6%;
+  transform: translateY(100%);
+
+  // SP
+  @include u-mqMax {
+    left: -5%;
+    bottom: 5%;
+    transform: translateY(50%);
+  }
+
+  &.comfortable {
+    bottom: 13%;
+    left: -10%;
+
+    // SP
+    @include u-mqMax {
+      left: -5%;
+      bottom: 5%;
+    }
+  }
+
+  img {
+    max-width: inherit;
+    width: auto;
+    height: 100%;
+  }
+}
+
+.multiProductList {
+  &:nth-child(2n) {
+    .multiProductIcon {
+      // SP
+      @include u-mqMax {
+        left: auto;
+        right: 0%;
+      }
+    }
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.flexColumn {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+// sp対策
+.container {
+  width: 90%;
+  padding: 0;
+}
+
+.middleAreaTextCont {
+  padding-top: 30px;
+  color: $blue01;
+  font-size: 1.8rem;
+  font-family: "Hiragino Kaku Gothic", sans-serif;
+  line-height: 2;
+  letter-spacing: 0.2em;
+
+  // SP
+  @include u-mqMax {
+    font-size: 1.4rem;
+  }
+}
+
+
+/*-----------------------------------------------
+PC/SP 出し分け
+------------------------------------------------*/
+.u-pcDb {
+  display: block;
+}
+.u-pcDib {
+  display: inline-block;
+}
+.u-pcDin {
+  display: inline;
+}
+.u-pcDf {
+  display: flex;
+}
+.u-pcDt {
+  display: table;
+}
+.u-pcDtc {
+  display: table-cell;
+}
+
+.u-spDb,
+.u-spDib,
+.u-spDin,
+.u-spDf,
+.u-spDt,
+.u-spDtc {
+  display: none;
+}
+
+@include u-mqMax {
+  .u-pcDb,
+  .u-pcDib,
+  .u-pcDin,
+  .u-pcDf,
+  .u-pcDt,
+  .u-pcDtc {
+    display: none;
+  }
+
+  .u-spDb {
+    display: block;
+  }
+  .u-spDib {
+    display: inline-block;
+  }
+  .u-spDin {
+    display: inline;
+  }
+  .u-spDf {
+    display: flex;
+  }
+  .u-spDt {
+    display: table;
+  }
+  .u-spDtc {
+    display: table-cell;
+  }
+}
