@@ -14,22 +14,37 @@ html(lang="ja")
 
 
     body.topPage
-        |
-        .
-            <noscript>
-                <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PCKJ3TX"height="0" width="0" style="display:none;visibility:hidden"></iframe>
-            </noscript>
         //- MAIN CONTENT
         main.siteContent(role="main")
 
-            section.fvSec
+            section.fvSec.bgSec
                 .fvSec__inr.swiper-container
                     .fvSec__inrBox.swiper-wrapper
                         .fvSec__inrBoxCont.swiper-slide
-                            .fvSec__inrBoxContImg
+                            .fvSec__inrBoxContImg.slide01
                             p.fvSec__inrBoxContTextImg
-                                img.fvSec__inrBoxContTextImg.u-pcDb(src=`${relativePath/_assets/images/fvSec/fvText_pc.png}` alt="wearing breeze")
-                                img.fvSec__inrBoxContTextImg.u-spDb(src=`${relativePath/_assets/images/fvSec/fvText_sp.png}` alt="wearing breeze")
+                                img.fvSec__inrBoxContTextImg.u-pcDb(src=`${relativePath}/_assets/images/fvSec/fvText_pc.png` alt="wearing breeze")
+                                img.fvSec__inrBoxContTextImg.u-spDb(src=`${relativePath}/_assets/images/fvSec/fvText_sp.png` alt="wearing breeze")
+                        .fvSec__inrBoxCont.swiper-slide
+                            .fvSec__inrBoxContImg.slide02
+                            p.fvSec__inrBoxContTextImg.bottomLeftCorner
+                                img.fvSec__inrBoxContTextImg.u-pcDb(src=`${relativePath}/_assets/images/fvSec/fvText_pc.png` alt="wearing breeze")
+                                img.fvSec__inrBoxContTextImg.u-spDb(src=`${relativePath}/_assets/images/fvSec/fvText_sp.png` alt="wearing breeze")
+                        .fvSec__inrBoxCont.swiper-slide
+                            .fvSec__inrBoxContImg.slide03
+                            p.fvSec__inrBoxContTextImg
+                                img.fvSec__inrBoxContTextImg.u-pcDb(src=`${relativePath}/_assets/images/fvSec/fvText_pc.png` alt="wearing breeze")
+                                img.fvSec__inrBoxContTextImg.u-spDb(src=`${relativePath}/_assets/images/fvSec/fvText_sp.png` alt="wearing breeze")
+                        .fvSec__inrBoxCont.swiper-slide
+                            .fvSec__inrBoxContImg.slide04
+                            p.fvSec__inrBoxContTextImg
+                                img.fvSec__inrBoxContTextImg.u-pcDb(src=`${relativePath}/_assets/images/fvSec/fvText_pc.png` alt="wearing breeze")
+                                img.fvSec__inrBoxContTextImg.u-spDb(src=`${relativePath}/_assets/images/fvSec/fvText_sp.png` alt="wearing breeze")
+                        .fvSec__inrBoxCont.swiper-slide
+                            .fvSec__inrBoxContImg.slide05
+                            p.fvSec__inrBoxContTextImg
+                                img.fvSec__inrBoxContTextImg.u-pcDb(src=`${relativePath}/_assets/images/fvSec/fvText_pc.png` alt="wearing breeze")
+                                img.fvSec__inrBoxContTextImg.u-spDb(src=`${relativePath}/_assets/images/fvSec/fvText_sp.png` alt="wearing breeze")
 
 
             section.productSec
