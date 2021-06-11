@@ -43,7 +43,7 @@ export const swiperSlider = () => {
   //   },
   // });
 
-  const bgSectionSlider = new Swiper(".swiper-container", {
+  const bgSectionSlider = new Swiper(".swbiper-container", {
     watchOverflow: true, // スライドが1枚しかなかったらスライダー機能をなくす
     speed: 800, // スライド切替スピード
     spaceBetween: 0, // スライド間のmarginは0px
